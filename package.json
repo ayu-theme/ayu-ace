@@ -4,7 +4,7 @@
   "description": "ayu color theme for the ace editor",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/k15a/ayu-ace",
+    "url": "https://github.com/ayu-theme/ayu-ace",
     "type": "git"
   },
   "author": "Konstantin Pschera <me@kons.ch>",
