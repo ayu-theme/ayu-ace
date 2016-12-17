@@ -44,7 +44,7 @@ color: #FFCC66\
 }\
 \
 .ace-ayu-mirage .ace_marker-layer .ace_selection {\
-background: #343F4D\
+background: #343F4C\
 }\
 \
 .ace-ayu-mirage.ace_multiselect .ace_selection.ace_start {\
@@ -70,7 +70,7 @@ background-color: #242B38\
 }\
 \
 .ace-ayu-mirage .ace_marker-layer .ace_selected-word {\
-border: 1px solid #343F4D\
+border: 1px solid #343F4C\
 }\
 \
 .ace-ayu-mirage .ace_fold {\
