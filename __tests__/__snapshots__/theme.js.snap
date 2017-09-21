@@ -79,12 +79,8 @@ background-color: #FFB454;\\
 border-color: #E6E1CF\\
 }\\
 \\
-.ace-ayu-dark .ace_keyword {\\
-color: #FF7733\\
-}\\
-\\
-.ace-ayu-dark .ace_keyword.ace_other.ace_unit {\\
-color: #FFEE99\\
+.ace-ayu-dark .ace_keyword.ace_operator {\\
+color: #F29668\\
 }\\
 \\
 .ace-ayu-dark .ace_constant.ace_language {\\
@@ -103,20 +99,31 @@ color: #FFEE99\\
 color: #95E6CB\\
 }\\
 \\
-.ace-ayu-dark .ace_support.ace_function {\\
-color: #FFB454\\
-}\\
-\\
-.ace-ayu-dark .ace_support.ace_constant {\\
+.ace-ayu-dark .ace_constant.ace_other {\\
 color: #FFEE99\\
 }\\
 \\
+.ace-ayu-dark .ace_support.ace_function {\\
+color: #F07178\\
+}\\
+\\
+.ace-ayu-dark .ace_support.ace_constant {\\
+font-style: italic;\\
+color: #F29668\\
+}\\
+\\
 .ace-ayu-dark .ace_support.ace_class {\\
-color: #36A3D9\\
+font-style: italic;\\
+color: #39BAE6\\
 }\\
 \\
 .ace-ayu-dark .ace_support.ace_type {\\
-color: #36A3D9\\
+font-style: italic;\\
+color: #39BAE6\\
+}\\
+\\
+.ace-ayu-dark .ace_storage {\\
+color: #FF7733\\
 }\\
 \\
 .ace-ayu-dark .ace_storage.ace_type {\\
@@ -133,7 +140,7 @@ background-color: #FF7733\\
 }\\
 \\
 .ace-ayu-dark .ace_string {\\
-color: #B8CC52\\
+color: #C2D94C\\
 }\\
 \\
 .ace-ayu-dark .ace_string.ace_regexp {\\
@@ -151,19 +158,15 @@ color: #E6E1CF\\
 \\
 .ace-ayu-dark .ace_variable.ace_language {\\
 font-style: italic;\\
-color: #36A3D9\\
+color: #39BAE6\\
 }\\
 \\
 .ace-ayu-dark .ace_variable.ace_parameter {\\
 color: #FFEE99\\
 }\\
 \\
-.ace-ayu-dark .ace_meta.ace_tag {\\
-color: #E7C547\\
-}\\
-\\
 .ace-ayu-dark .ace_entity.ace_other.ace_attribute-name {\\
-color: #FF7733\\
+color: #FFB454\\
 }\\
 \\
 .ace-ayu-dark .ace_entity.ace_name.ace_function {\\
@@ -171,11 +174,7 @@ color: #FFB454\\
 }\\
 \\
 .ace-ayu-dark .ace_entity.ace_name.ace_tag {\\
-color: #36A3D9\\
-}\\
-\\
-.ace-ayu-dark .ace_markup.ace_heading {\\
-color: #B8CC52\\
+color: #39BAE6\\
 }\'
 
 var dom = acequire(\'../lib/dom\')
@@ -212,7 +211,7 @@ exports.isDark = false
 exports.cssClass = \'ace-ayu-light\'
 exports.cssText = \'.ace-ayu-light .ace_gutter {\\
 background: #FAFAFA;\\
-color: rgb(171,177,183)\\
+color: rgb(180,184,189)\\
 }\\
 \\
 .ace-ayu-light .ace_print-margin {\\
@@ -222,7 +221,7 @@ background: #e8e8e8\\
 \\
 .ace-ayu-light {\\
 background-color: #FAFAFA;\\
-color: #5C6773\\
+color: #6E7580\\
 }\\
 \\
 .ace-ayu-light .ace_cursor {\\
@@ -261,15 +260,11 @@ border: 1px solid #F0EEE4\\
 \\
 .ace-ayu-light .ace_fold {\\
 background-color: #F29718;\\
-border-color: #5C6773\\
+border-color: #6E7580\\
 }\\
 \\
-.ace-ayu-light .ace_keyword {\\
-color: #F2590C\\
-}\\
-\\
-.ace-ayu-light .ace_keyword.ace_other.ace_unit {\\
-color: #A37ACC\\
+.ace-ayu-light .ace_keyword.ace_operator {\\
+color: #ED9366\\
 }\\
 \\
 .ace-ayu-light .ace_constant.ace_language {\\
@@ -285,36 +280,47 @@ color: #A37ACC\\
 }\\
 \\
 .ace-ayu-light .ace_constant.ace_character.ace_escape {\\
-color: #4DBF99\\
+color: #4CBF99\\
 }\\
 \\
-.ace-ayu-light .ace_support.ace_function {\\
-color: #F29718\\
-}\\
-\\
-.ace-ayu-light .ace_support.ace_constant {\\
+.ace-ayu-light .ace_constant.ace_other {\\
 color: #A37ACC\\
 }\\
 \\
+.ace-ayu-light .ace_support.ace_function {\\
+color: #F07171\\
+}\\
+\\
+.ace-ayu-light .ace_support.ace_constant {\\
+font-style: italic;\\
+color: #ED9366\\
+}\\
+\\
 .ace-ayu-light .ace_support.ace_class {\\
-color: #41A6D9\\
+font-style: italic;\\
+color: #55B4D4\\
 }\\
 \\
 .ace-ayu-light .ace_support.ace_type {\\
-color: #41A6D9\\
+font-style: italic;\\
+color: #55B4D4\\
+}\\
+\\
+.ace-ayu-light .ace_storage {\\
+color: #FA6E32\\
 }\\
 \\
 .ace-ayu-light .ace_storage.ace_type {\\
-color: #F2590C\\
+color: #FA6E32\\
 }\\
 \\
 .ace-ayu-light .ace_invalid {\\
-color: #FF3333\\
+color: #F51818\\
 }\\
 \\
 .ace-ayu-light .ace_invalid.ace_deprecated {\\
 color: #FFFFFF;\\
-background-color: #F2590C\\
+background-color: #FA6E32\\
 }\\
 \\
 .ace-ayu-light .ace_string {\\
@@ -322,7 +328,7 @@ color: #86B300\\
 }\\
 \\
 .ace-ayu-light .ace_string.ace_regexp {\\
-color: #4DBF99\\
+color: #4CBF99\\
 }\\
 \\
 .ace-ayu-light .ace_comment {\\
@@ -331,24 +337,20 @@ color: #ABB0B6\\
 }\\
 \\
 .ace-ayu-light .ace_variable {\\
-color: #5C6773\\
+color: #6E7580\\
 }\\
 \\
 .ace-ayu-light .ace_variable.ace_language {\\
 font-style: italic;\\
-color: #41A6D9\\
+color: #55B4D4\\
 }\\
 \\
 .ace-ayu-light .ace_variable.ace_parameter {\\
 color: #A37ACC\\
 }\\
 \\
-.ace-ayu-light .ace_meta.ace_tag {\\
-color: #E7C547\\
-}\\
-\\
 .ace-ayu-light .ace_entity.ace_other.ace_attribute-name {\\
-color: #F2590C\\
+color: #F29718\\
 }\\
 \\
 .ace-ayu-light .ace_entity.ace_name.ace_function {\\
@@ -356,11 +358,7 @@ color: #F29718\\
 }\\
 \\
 .ace-ayu-light .ace_entity.ace_name.ace_tag {\\
-color: #41A6D9\\
-}\\
-\\
-.ace-ayu-light .ace_markup.ace_heading {\\
-color: #86B300\\
+color: #55B4D4\\
 }\'
 
 var dom = acequire(\'../lib/dom\')
@@ -449,12 +447,8 @@ background-color: #FFD580;\\
 border-color: #D9D7CE\\
 }\\
 \\
-.ace-ayu-mirage .ace_keyword {\\
-color: #FFAE57\\
-}\\
-\\
-.ace-ayu-mirage .ace_keyword.ace_other.ace_unit {\\
-color: #D4BFFF\\
+.ace-ayu-mirage .ace_keyword.ace_operator {\\
+color: #F29E74\\
 }\\
 \\
 .ace-ayu-mirage .ace_constant.ace_language {\\
@@ -473,24 +467,35 @@ color: #D4BFFF\\
 color: #95E6CB\\
 }\\
 \\
-.ace-ayu-mirage .ace_support.ace_function {\\
-color: #FFD580\\
-}\\
-\\
-.ace-ayu-mirage .ace_support.ace_constant {\\
+.ace-ayu-mirage .ace_constant.ace_other {\\
 color: #D4BFFF\\
 }\\
 \\
+.ace-ayu-mirage .ace_support.ace_function {\\
+color: #F28779\\
+}\\
+\\
+.ace-ayu-mirage .ace_support.ace_constant {\\
+font-style: italic;\\
+color: #F29E74\\
+}\\
+\\
 .ace-ayu-mirage .ace_support.ace_class {\\
+font-style: italic;\\
 color: #5CCFE6\\
 }\\
 \\
 .ace-ayu-mirage .ace_support.ace_type {\\
+font-style: italic;\\
 color: #5CCFE6\\
 }\\
 \\
+.ace-ayu-mirage .ace_storage {\\
+color: #FFA759\\
+}\\
+\\
 .ace-ayu-mirage .ace_storage.ace_type {\\
-color: #FFAE57\\
+color: #FFA759\\
 }\\
 \\
 .ace-ayu-mirage .ace_invalid {\\
@@ -499,7 +504,7 @@ color: #FF3333\\
 \\
 .ace-ayu-mirage .ace_invalid.ace_deprecated {\\
 color: #FFFFFF;\\
-background-color: #FFAE57\\
+background-color: #FFA759\\
 }\\
 \\
 .ace-ayu-mirage .ace_string {\\
@@ -528,12 +533,8 @@ color: #5CCFE6\\
 color: #D4BFFF\\
 }\\
 \\
-.ace-ayu-mirage .ace_meta.ace_tag {\\
-color: #80D4FF\\
-}\\
-\\
 .ace-ayu-mirage .ace_entity.ace_other.ace_attribute-name {\\
-color: #FFAE57\\
+color: #FFD580\\
 }\\
 \\
 .ace-ayu-mirage .ace_entity.ace_name.ace_function {\\
@@ -542,10 +543,6 @@ color: #FFD580\\
 \\
 .ace-ayu-mirage .ace_entity.ace_name.ace_tag {\\
 color: #5CCFE6\\
-}\\
-\\
-.ace-ayu-mirage .ace_markup.ace_heading {\\
-color: #BAE67E\\
 }\'
 
 var dom = acequire(\'../lib/dom\')

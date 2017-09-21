@@ -26,7 +26,7 @@ exports.isDark = false
 exports.cssClass = 'ace-ayu-light'
 exports.cssText = '.ace-ayu-light .ace_gutter {\
 background: #FAFAFA;\
-color: rgb(171,177,183)\
+color: rgb(180,184,189)\
 }\
 \
 .ace-ayu-light .ace_print-margin {\
@@ -36,7 +36,7 @@ background: #e8e8e8\
 \
 .ace-ayu-light {\
 background-color: #FAFAFA;\
-color: #5C6773\
+color: #6E7580\
 }\
 \
 .ace-ayu-light .ace_cursor {\
@@ -75,15 +75,11 @@ border: 1px solid #F0EEE4\
 \
 .ace-ayu-light .ace_fold {\
 background-color: #F29718;\
-border-color: #5C6773\
+border-color: #6E7580\
 }\
 \
-.ace-ayu-light .ace_keyword {\
-color: #F2590C\
-}\
-\
-.ace-ayu-light .ace_keyword.ace_other.ace_unit {\
-color: #A37ACC\
+.ace-ayu-light .ace_keyword.ace_operator {\
+color: #ED9366\
 }\
 \
 .ace-ayu-light .ace_constant.ace_language {\
@@ -99,36 +95,47 @@ color: #A37ACC\
 }\
 \
 .ace-ayu-light .ace_constant.ace_character.ace_escape {\
-color: #4DBF99\
+color: #4CBF99\
 }\
 \
-.ace-ayu-light .ace_support.ace_function {\
-color: #F29718\
-}\
-\
-.ace-ayu-light .ace_support.ace_constant {\
+.ace-ayu-light .ace_constant.ace_other {\
 color: #A37ACC\
 }\
 \
+.ace-ayu-light .ace_support.ace_function {\
+color: #F07171\
+}\
+\
+.ace-ayu-light .ace_support.ace_constant {\
+font-style: italic;\
+color: #ED9366\
+}\
+\
 .ace-ayu-light .ace_support.ace_class {\
-color: #41A6D9\
+font-style: italic;\
+color: #55B4D4\
 }\
 \
 .ace-ayu-light .ace_support.ace_type {\
-color: #41A6D9\
+font-style: italic;\
+color: #55B4D4\
+}\
+\
+.ace-ayu-light .ace_storage {\
+color: #FA6E32\
 }\
 \
 .ace-ayu-light .ace_storage.ace_type {\
-color: #F2590C\
+color: #FA6E32\
 }\
 \
 .ace-ayu-light .ace_invalid {\
-color: #FF3333\
+color: #F51818\
 }\
 \
 .ace-ayu-light .ace_invalid.ace_deprecated {\
 color: #FFFFFF;\
-background-color: #F2590C\
+background-color: #FA6E32\
 }\
 \
 .ace-ayu-light .ace_string {\
@@ -136,7 +143,7 @@ color: #86B300\
 }\
 \
 .ace-ayu-light .ace_string.ace_regexp {\
-color: #4DBF99\
+color: #4CBF99\
 }\
 \
 .ace-ayu-light .ace_comment {\
@@ -145,24 +152,20 @@ color: #ABB0B6\
 }\
 \
 .ace-ayu-light .ace_variable {\
-color: #5C6773\
+color: #6E7580\
 }\
 \
 .ace-ayu-light .ace_variable.ace_language {\
 font-style: italic;\
-color: #41A6D9\
+color: #55B4D4\
 }\
 \
 .ace-ayu-light .ace_variable.ace_parameter {\
 color: #A37ACC\
 }\
 \
-.ace-ayu-light .ace_meta.ace_tag {\
-color: #E7C547\
-}\
-\
 .ace-ayu-light .ace_entity.ace_other.ace_attribute-name {\
-color: #F2590C\
+color: #F29718\
 }\
 \
 .ace-ayu-light .ace_entity.ace_name.ace_function {\
@@ -170,11 +173,7 @@ color: #F29718\
 }\
 \
 .ace-ayu-light .ace_entity.ace_name.ace_tag {\
-color: #41A6D9\
-}\
-\
-.ace-ayu-light .ace_markup.ace_heading {\
-color: #86B300\
+color: #55B4D4\
 }'
 
 var dom = acequire('../lib/dom')

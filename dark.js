@@ -78,12 +78,8 @@ background-color: #FFB454;\
 border-color: #E6E1CF\
 }\
 \
-.ace-ayu-dark .ace_keyword {\
-color: #FF7733\
-}\
-\
-.ace-ayu-dark .ace_keyword.ace_other.ace_unit {\
-color: #FFEE99\
+.ace-ayu-dark .ace_keyword.ace_operator {\
+color: #F29668\
 }\
 \
 .ace-ayu-dark .ace_constant.ace_language {\
@@ -102,20 +98,31 @@ color: #FFEE99\
 color: #95E6CB\
 }\
 \
-.ace-ayu-dark .ace_support.ace_function {\
-color: #FFB454\
-}\
-\
-.ace-ayu-dark .ace_support.ace_constant {\
+.ace-ayu-dark .ace_constant.ace_other {\
 color: #FFEE99\
 }\
 \
+.ace-ayu-dark .ace_support.ace_function {\
+color: #F07178\
+}\
+\
+.ace-ayu-dark .ace_support.ace_constant {\
+font-style: italic;\
+color: #F29668\
+}\
+\
 .ace-ayu-dark .ace_support.ace_class {\
-color: #36A3D9\
+font-style: italic;\
+color: #39BAE6\
 }\
 \
 .ace-ayu-dark .ace_support.ace_type {\
-color: #36A3D9\
+font-style: italic;\
+color: #39BAE6\
+}\
+\
+.ace-ayu-dark .ace_storage {\
+color: #FF7733\
 }\
 \
 .ace-ayu-dark .ace_storage.ace_type {\
@@ -132,7 +139,7 @@ background-color: #FF7733\
 }\
 \
 .ace-ayu-dark .ace_string {\
-color: #B8CC52\
+color: #C2D94C\
 }\
 \
 .ace-ayu-dark .ace_string.ace_regexp {\
@@ -150,19 +157,15 @@ color: #E6E1CF\
 \
 .ace-ayu-dark .ace_variable.ace_language {\
 font-style: italic;\
-color: #36A3D9\
+color: #39BAE6\
 }\
 \
 .ace-ayu-dark .ace_variable.ace_parameter {\
 color: #FFEE99\
 }\
 \
-.ace-ayu-dark .ace_meta.ace_tag {\
-color: #E7C547\
-}\
-\
 .ace-ayu-dark .ace_entity.ace_other.ace_attribute-name {\
-color: #FF7733\
+color: #FFB454\
 }\
 \
 .ace-ayu-dark .ace_entity.ace_name.ace_function {\
@@ -170,11 +173,7 @@ color: #FFB454\
 }\
 \
 .ace-ayu-dark .ace_entity.ace_name.ace_tag {\
-color: #36A3D9\
-}\
-\
-.ace-ayu-dark .ace_markup.ace_heading {\
-color: #B8CC52\
+color: #39BAE6\
 }'
 
 var dom = acequire('../lib/dom')

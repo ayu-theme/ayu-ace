@@ -78,12 +78,8 @@ background-color: #FFD580;\
 border-color: #D9D7CE\
 }\
 \
-.ace-ayu-mirage .ace_keyword {\
-color: #FFAE57\
-}\
-\
-.ace-ayu-mirage .ace_keyword.ace_other.ace_unit {\
-color: #D4BFFF\
+.ace-ayu-mirage .ace_keyword.ace_operator {\
+color: #F29E74\
 }\
 \
 .ace-ayu-mirage .ace_constant.ace_language {\
@@ -102,24 +98,35 @@ color: #D4BFFF\
 color: #95E6CB\
 }\
 \
-.ace-ayu-mirage .ace_support.ace_function {\
-color: #FFD580\
-}\
-\
-.ace-ayu-mirage .ace_support.ace_constant {\
+.ace-ayu-mirage .ace_constant.ace_other {\
 color: #D4BFFF\
 }\
 \
+.ace-ayu-mirage .ace_support.ace_function {\
+color: #F28779\
+}\
+\
+.ace-ayu-mirage .ace_support.ace_constant {\
+font-style: italic;\
+color: #F29E74\
+}\
+\
 .ace-ayu-mirage .ace_support.ace_class {\
+font-style: italic;\
 color: #5CCFE6\
 }\
 \
 .ace-ayu-mirage .ace_support.ace_type {\
+font-style: italic;\
 color: #5CCFE6\
 }\
 \
+.ace-ayu-mirage .ace_storage {\
+color: #FFA759\
+}\
+\
 .ace-ayu-mirage .ace_storage.ace_type {\
-color: #FFAE57\
+color: #FFA759\
 }\
 \
 .ace-ayu-mirage .ace_invalid {\
@@ -128,7 +135,7 @@ color: #FF3333\
 \
 .ace-ayu-mirage .ace_invalid.ace_deprecated {\
 color: #FFFFFF;\
-background-color: #FFAE57\
+background-color: #FFA759\
 }\
 \
 .ace-ayu-mirage .ace_string {\
@@ -157,12 +164,8 @@ color: #5CCFE6\
 color: #D4BFFF\
 }\
 \
-.ace-ayu-mirage .ace_meta.ace_tag {\
-color: #80D4FF\
-}\
-\
 .ace-ayu-mirage .ace_entity.ace_other.ace_attribute-name {\
-color: #FFAE57\
+color: #FFD580\
 }\
 \
 .ace-ayu-mirage .ace_entity.ace_name.ace_function {\
@@ -171,10 +174,6 @@ color: #FFD580\
 \
 .ace-ayu-mirage .ace_entity.ace_name.ace_tag {\
 color: #5CCFE6\
-}\
-\
-.ace-ayu-mirage .ace_markup.ace_heading {\
-color: #BAE67E\
 }'
 
 var dom = acequire('../lib/dom')
